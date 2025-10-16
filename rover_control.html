@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rover Control</title>
+    <link rel="stylesheet" href="css/rover_control.css"> 
+</head>
+<body>
+
+    <header class="status-bar">
+        <div class="status-left">
+            <span class="battery-status">Battery: 90%</span>
+        </div>
+        <div class="status-right">
+            <span class="connection-status">Connection: Stable</span>
+        </div>
+    </header>
+
+    <div class="back-container">
+        <a href="dashboard.html" class="back-button">Back</a>
+    </div>
+
+    <main class="control-content">
+        <h2>Rover Control</h2>
+        
+        <div class="dpad-container">
+            <button class="dpad-button up" id="forward-btn">&uarr;</button>
+            
+            <div class="dpad-middle-row">
+                <button class="dpad-button left" id="left-btn">&larr;</button>
+                
+                <div class="dpad-spacer"></div> 
+                
+                <button class="dpad-button right" id="right-btn">&rarr;</button>
+            </div>
+            
+            <button class="dpad-button down" id="backward-btn">&darr;</button>
+        </div>
+    </main>
+</body>
+</html>

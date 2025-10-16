@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+
+            <div class="toggle-container">
+                <button type="button" id="toggleEmail" class="active">Email (Gmail)</button>
+                <button type="button" id="togglePhone">Phone Number</button>
+            </div>
+
+            <div class="input-group">
+                <label for="loginId" id="loginIdLabel">Login ID (Gmail)</label>
+                <input type="email" 
+                       id="loginId" 
+                       name="loginId" 
+                       placeholder="Enter your Gmail address" 
+                       required>
+                <small id="errorText" class="error"></small>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" 
+                       id="password" 
+                       name="password" 
+                       placeholder="Enter your password" 
+                       required>
+            </div>
+            
+            <button type="submit" class="login-button">Login</button>
+
+        </form>
+    </div>
+
+   <script src="js/script.js"></script>
+</body>
+</html>
